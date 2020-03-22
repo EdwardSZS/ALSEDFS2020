@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alseuser/Descargas/P3-Nix/Polinomio.cpp
+iostream
+-
+sstream
+-
+Polinomio.h
+/home/alseuser/Descargas/P3-Nix/Polinomio.h
+
+/home/alseuser/Descargas/P3-Nix/Polinomio.h
+list
+-
+string
+-
+iostream
+-
+utility
+-
+queue
+-
+
+/home/alseuser/Descargas/P3-Nix/Punto3_Tar_autogen/mocs_compilation.cpp
+
+/home/alseuser/Descargas/P3-Nix/main.cpp
+iostream
+-
+Polinomio.h
+/home/alseuser/Descargas/P3-Nix/Polinomio.h
+math.h
+-
+string
+-
+

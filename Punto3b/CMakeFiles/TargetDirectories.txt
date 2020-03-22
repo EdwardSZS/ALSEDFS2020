@@ -1,0 +1,4 @@
+/home/alseuser/Descargas/P3-Nix/CMakeFiles/rebuild_cache.dir
+/home/alseuser/Descargas/P3-Nix/CMakeFiles/Punto3_Tar.dir
+/home/alseuser/Descargas/P3-Nix/CMakeFiles/edit_cache.dir
+/home/alseuser/Descargas/P3-Nix/CMakeFiles/Punto3_Tar_autogen.dir
