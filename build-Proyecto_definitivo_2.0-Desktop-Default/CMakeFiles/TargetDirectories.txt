@@ -1,0 +1,4 @@
+/home/alseuser/Escritorio/ALSEDFS2020/build-Proyecto_definitivo_2.0-Desktop-Default/CMakeFiles/rebuild_cache.dir
+/home/alseuser/Escritorio/ALSEDFS2020/build-Proyecto_definitivo_2.0-Desktop-Default/CMakeFiles/Proyecto_definitivo_2.dir
+/home/alseuser/Escritorio/ALSEDFS2020/build-Proyecto_definitivo_2.0-Desktop-Default/CMakeFiles/edit_cache.dir
+/home/alseuser/Escritorio/ALSEDFS2020/build-Proyecto_definitivo_2.0-Desktop-Default/CMakeFiles/Proyecto_definitivo_2_autogen.dir

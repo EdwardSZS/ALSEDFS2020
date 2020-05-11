@@ -2,11 +2,11 @@
 #include "ui_crear_usr.h"
 #include "datosentrada_sesion_usr.h"
 #include "qmessagebox.h"
-//#include "base_de_datos.h"
+#include "base_de_datos.h"
 #include "crear_usr.h"
 #include <sstream>
 #include <iostream>
-#include "base_de_datos.h"
+
 
 using namespace std;
 
@@ -16,17 +16,19 @@ Crear_usr::Crear_usr(QWidget *parent) :
 {
     ui->setupUi(this);
 
+
 }
 
 Crear_usr::~Crear_usr()
 {
     delete ui;
+
 }
 
 void Crear_usr::on_Ok_clicked()
 { string  prn,pru,prc,prap,prfn;
-    //Base_de_datos db;
-    //db.abrirDB("formulario_usr");
+     Base_de_datos db;
+    db.abrirDB("formulario_usr");
     Crear_usr d(this);
     QMessageBox msg;
    prn = ui->lineEdit_nombre->text().toStdString();
@@ -45,27 +47,28 @@ void Crear_usr::on_Ok_clicked()
          else
         {    datosentrada_sesion_usr b(this);
              b.setModal( true );
+             db.cargar_usrs(d);
              this->close();
              b.show();
              b.exec();
          }
-    //db.cerrarDB();
+    db.cerrarDB();
 
 }
 
 string Crear_usr::getFecha_nac() const
 {
-    return ui->lineEdit_fn->text().toStdString();;
+    return ui->lineEdit_fn->text().toStdString();
 }
 
 string Crear_usr::getApellido() const
 {
-    return  ui->lineEdit_nombre->text().toStdString();;
+    return  ui->lineEdit_nombre->text().toStdString();
 }
 
 string Crear_usr::getPass() const
 {
-    return ui->lineEdit_ctr->text().toStdString();;
+    return ui->lineEdit_ctr->text().toStdString();
 }
 
 float Crear_usr::getNi() const

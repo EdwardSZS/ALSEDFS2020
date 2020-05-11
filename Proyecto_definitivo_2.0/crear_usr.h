@@ -2,7 +2,7 @@
 #define CREAR_USR_H
 
 #include <QDialog>
-//#include <db>
+//#include "base_de_datos.h"
 #include <string>
 using namespace  std;
 

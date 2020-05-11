@@ -56,7 +56,7 @@ void datosentrada_sesion_usr::on_Registrar2_clicked()
 {   Crear_usr b(this);
     b.setModal( true );
     this->close();
-    b.show();
+    b.showMaximized();
     b.exec();
     this -> close();
 }
