@@ -27,7 +27,6 @@ private slots:
 
 private:
     Ui::ven_crono *ui;
-
 };
 
 #endif // VEN_CRONO_H

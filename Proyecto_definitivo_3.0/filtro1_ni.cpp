@@ -4,7 +4,7 @@
 #include "qmessagebox.h"
 #include "sstream"
 #include "iostream"
-#include "ven_crono.h"
+#include "ven_game.h"
 
 using namespace std;
 
@@ -37,10 +37,10 @@ void filtro1_NI::on_Continuar_clicked()
         a.show();
     }
          else       //REALMENTE ESTO ES UN IF DE VERIFICACION A USUARIO
-        {    ven_crono b(this);
+        {    ven_game b(this);
              b.setModal( true );
              this->close();
-             b.show();
+             b.showMaximized();
              b.exec();
          }
                    //AQUI DEBE IR UN IF DE VERIFICACION A PACIENTE

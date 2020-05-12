@@ -13,8 +13,7 @@ add_executable(${PROJECT_NAME} "main.cpp" "datosentrada_sesion_usr.cpp"
                                "base_de_datos.h" "base_de_datos.cpp" "crear_usr.h" "crear_usr.ui" "crear_usr.cpp"
                                "opciones_deusr.h" "opciones_deusr.cpp" "opciones_deusr.ui" "crear_pac.h" "crear_pac.cpp"
                                "crear_pac.ui" "filtro1_ni.cpp" "filtro1_ni.h" "filtro1_ni.ui"
-                               "ven_crono.ui" "ven_crono.cpp" "ven_crono.h" "ven_game.ui" "ven_game.cpp" "ven_game.h"
-                               "scores.ui" "scores.cpp" "scores.h")
+                               "ven_game.ui" "ven_game.cpp" "ven_game.h" "scores.ui" "scores.cpp" "scores.h")
 
 target_link_libraries (${PROJECT_NAME} Qt5::Core Qt5::Widgets sqlite3 )
 

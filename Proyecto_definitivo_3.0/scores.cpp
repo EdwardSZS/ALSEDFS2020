@@ -16,7 +16,6 @@ scores::~scores()
 
 void scores::on_pushButton_clicked()
 {
-    opciones_deusr a (this);
+    //opciones_deusr a (this);
     this->close();
-    a.show();
 }
