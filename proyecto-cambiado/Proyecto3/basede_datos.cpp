@@ -1,15 +1,12 @@
-#include "base_de_datos.h"
-#include <iostream>
-#include <sstream>
-#include "crear_usr.h"
-#include "crear_pac.h"
+#include "basede_datos.h"
+#include "registro_usr.h"
 
-Base_de_datos::Base_de_datos()
+Basede_datos::Basede_datos()
 {
 
 }
 
-bool Base_de_datos::abrirDB(string path)
+Basede_datos::abrir_base_dedatos(string path)
 {int rc;
 
     ///* Open database
@@ -25,7 +22,8 @@ bool Base_de_datos::abrirDB(string path)
 
 }
 
-bool Base_de_datos::cargar_usrs(Crear_usr &usr){
+Basede_datos::almacenar_usr(registro_usr &usr)
+{
     /*TABLE `Datos_user` (`Nombre`	TEXT NOT NULL,
         *`Apellido`	TEXT NOT NULL,
         *`Documento_de_identidad`	INTEGER NOT NULL UNIQUE,
@@ -43,7 +41,7 @@ bool Base_de_datos::cargar_usrs(Crear_usr &usr){
         sql <<"INSERT INTO Datos_user (Nombre, Apellido, Documento_de_identidad, Fecha_de_nacimiento, " \
               "Usuario, Contraseña) VALUES (";
 
-        sql << usr.getNombre() << ", " << usr.getApellido() << ", " << usr.getNi() << ", " << usr.getFecha_nac() << ", " ;
+        sql << usr.getname() << ", " << usr.getApellido() << ", " << usr.getNi() << ", " << usr.getFecha_nac() << ", " ;
         sql << usr.getUsuario() << ", " << usr.getPass() <<  ");" ;
         std::cout << sql.str() << std::endl;
         /* Execute SQL statement */
@@ -60,15 +58,7 @@ bool Base_de_datos::cargar_usrs(Crear_usr &usr){
 
 }
 
-int Base_de_datos::funcionLlamada(void *data, int argc, char **argv, char **azColName)
+Basede_datos::cerrar_db()
 {
 
 }
-
-
-bool Base_de_datos::cerrarDB()
-{
-     sqlite3_close( db );
-
-}
-

@@ -20,18 +20,18 @@ datosentrada_sesion_usr::datosentrada_sesion_usr(QWidget *parent) :
 
 datosentrada_sesion_usr::~datosentrada_sesion_usr()
 {
-    //this->parent()->deleteLater();
     delete ui;
 }
 
 void datosentrada_sesion_usr::on_ir_clicked()
 {
-   bool x=false;
+            //bool x=false; //por el momento no lo usamos
    string usr,ctr;
    QMessageBox msg;
 
-   emit pasardatos(x);
-   datosentrada_sesion_usr c(this);
+            //emit pasardatos(x); //por el momento no lo usamos
+            //datosentrada_sesion_usr c(this); //HACER ESTO ES PELIGROS, TENGA LA IDEA FIJA DE QUE ESTO PROCESA UNA NUEVA VENTANA
+                                            //MAS NO MANIPULA LA ACTUAL
 
    usr = ui->lineEdit_usr->text().toStdString();
    ctr = ui->lineEdit_ctr->text().toStdString();
@@ -42,15 +42,15 @@ void datosentrada_sesion_usr::on_ir_clicked()
        msg.exec();
    }
    else
-        {//&&///////
-            this->close();
-    }
+   {
+       // CONEXION CON LA BD E INCLUIR EL COMANDO EXIST DE PARA VERIFICACION DE LA EXISTECNIA DEL USUSARIo
+       //this->close();
+   }
 
 }
 
 void datosentrada_sesion_usr::conect_ventana()
 {
-
 }
 
 void datosentrada_sesion_usr::on_Registrar2_clicked()
@@ -60,5 +60,6 @@ void datosentrada_sesion_usr::on_Registrar2_clicked()
     this->close();
     b.show();
     b.exec();
-    this -> close();
+    //close(); //es posibile que se necesite
+    this -> close(); // PORQUE CARAJOS FUE PUESTO AQUI? al parecer no hace nada aqui
 }

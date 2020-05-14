@@ -20,16 +20,18 @@ crear_pac::~crear_pac()
 }
 
 void crear_pac::on_Registra_paci_clicked()
-{ string  prn,pra,prfn,pret;
+{
+    string  prn,pra,prfn,pret;
 
     crear_pac a(this);
     QMessageBox msg;
-   prn = ui->lineEdit_nombre->text().toStdString();
-   pra = ui->lineEdit_apellido->text().toStdString();
-   int ed = ui->lineEdit_edad->text().toFloat();
-   prfn = ui->lineEdit_fn->text().toStdString();
-   int ni = ui->lineEdit_ni->text().toFloat();
-   pret = ui->lineEdit_apellido->text().toStdString();
+
+    prn = ui->lineEdit_nombre->text().toStdString();
+    pra = ui->lineEdit_apellido->text().toStdString();
+    int ed = ui->lineEdit_edad->text().toFloat();
+    prfn = ui->lineEdit_fn->text().toStdString();
+    int ni = ui->lineEdit_ni->text().toFloat();
+    pret = ui->lineEdit_apellido->text().toStdString();
 
     if(prn.empty() == true || pra.empty() == true || ed == 0 || prfn.empty() == true || ni == 0 || prfn.empty() == true )
     {

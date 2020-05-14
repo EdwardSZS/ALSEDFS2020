@@ -16,6 +16,7 @@ public:
     ~datosentrada_sesion_usr();
   signals:
      void pasardatos (bool clik);
+
 private slots:
      void on_Registrar2_clicked();
 

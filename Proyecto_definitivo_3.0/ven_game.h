@@ -18,7 +18,7 @@ public:
 
 private slots:
 
-    //void ontime();
+    void ontime();
 
     void on_push30s_clicked();
 
@@ -32,9 +32,6 @@ private:
     int contador;
     Ui::ven_game *ui;
     QTimer *cronometro;
-    QTimer *cronometro1;
-    QTimer *cronometro2;
-    QTimer *cronometro3;
 };
 
 #endif // VEN_GAME_H
