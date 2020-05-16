@@ -3,6 +3,7 @@
 #include <string>
 #include <sqlite3.h>
 #include "registro_usr.h"
+#include "registro_paci.h"
 using namespace std;
 class base_da
 {
@@ -13,6 +14,7 @@ public:
      bool abrirDB( string path );
      bool cerrarDB();
      bool cargar_usrs(registro_usr &usr );
+     bool cargar_pac(registro_paci &pac);
      //bool cargar_paci();
 private:
     sqlite3 *db;

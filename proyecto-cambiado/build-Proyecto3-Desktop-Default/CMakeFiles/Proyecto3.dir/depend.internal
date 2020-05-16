@@ -228,6 +228,7 @@ CMakeFiles/Proyecto3.dir/conectardb.cpp.o
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/base_da.h
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/conectardb.cpp
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/conectardb.h
+ /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_paci.h
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -335,6 +336,7 @@ CMakeFiles/Proyecto3.dir/inicio.cpp.o
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/inicio.cpp
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/inicio.h
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/opciones.h
+ /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_paci.h
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
@@ -499,6 +501,7 @@ CMakeFiles/Proyecto3.dir/main.cpp.o
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/inicio.h
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/main.cpp
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/opciones.h
+ /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_paci.h
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -892,7 +895,6 @@ CMakeFiles/Proyecto3.dir/registro_paci.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QButtonGroup
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGroupBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHeaderView
@@ -901,6 +903,7 @@ CMakeFiles/Proyecto3.dir/registro_paci.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h
@@ -940,6 +943,7 @@ CMakeFiles/Proyecto3.dir/registro_usr.cpp.o
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/base_da.h
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/conectardb.h
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/opciones.h
+ /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_paci.h
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.cpp
  /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant

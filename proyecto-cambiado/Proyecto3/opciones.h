@@ -2,7 +2,7 @@
 #define OPCIONES_H
 
 #include <QMainWindow>
-
+#include "base_da.h"
 namespace Ui {
 class opciones;
 }
@@ -12,6 +12,7 @@ class opciones : public QMainWindow
     Q_OBJECT
 
 public:
+    base_da da;
     explicit opciones(QWidget *parent = 0);
     ~opciones();
 

@@ -227,6 +227,7 @@ CMakeFiles/Proyecto3.dir/base_da.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidg
 CMakeFiles/Proyecto3.dir/conectardb.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/base_da.h
 CMakeFiles/Proyecto3.dir/conectardb.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/conectardb.cpp
 CMakeFiles/Proyecto3.dir/conectardb.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/conectardb.h
+CMakeFiles/Proyecto3.dir/conectardb.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_paci.h
 CMakeFiles/Proyecto3.dir/conectardb.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.h
 CMakeFiles/Proyecto3.dir/conectardb.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/Proyecto3.dir/conectardb.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -334,6 +335,7 @@ CMakeFiles/Proyecto3.dir/inicio.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/pro
 CMakeFiles/Proyecto3.dir/inicio.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/inicio.cpp
 CMakeFiles/Proyecto3.dir/inicio.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/inicio.h
 CMakeFiles/Proyecto3.dir/inicio.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/opciones.h
+CMakeFiles/Proyecto3.dir/inicio.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_paci.h
 CMakeFiles/Proyecto3.dir/inicio.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.h
 CMakeFiles/Proyecto3.dir/inicio.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 CMakeFiles/Proyecto3.dir/inicio.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
@@ -498,6 +500,7 @@ CMakeFiles/Proyecto3.dir/main.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proye
 CMakeFiles/Proyecto3.dir/main.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/inicio.h
 CMakeFiles/Proyecto3.dir/main.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/main.cpp
 CMakeFiles/Proyecto3.dir/main.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/opciones.h
+CMakeFiles/Proyecto3.dir/main.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_paci.h
 CMakeFiles/Proyecto3.dir/main.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.h
 CMakeFiles/Proyecto3.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/Proyecto3.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
@@ -891,7 +894,6 @@ CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QButtonGroup
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
-CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGroupBox
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHeaderView
@@ -900,6 +902,7 @@ CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMessageBox
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem
+CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h
 CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractitemdelegate.h
@@ -939,6 +942,7 @@ CMakeFiles/Proyecto3.dir/registro_paci.cpp.o: Proyecto3_autogen/include/ui_regis
 CMakeFiles/Proyecto3.dir/registro_usr.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/base_da.h
 CMakeFiles/Proyecto3.dir/registro_usr.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/conectardb.h
 CMakeFiles/Proyecto3.dir/registro_usr.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/opciones.h
+CMakeFiles/Proyecto3.dir/registro_usr.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_paci.h
 CMakeFiles/Proyecto3.dir/registro_usr.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.cpp
 CMakeFiles/Proyecto3.dir/registro_usr.cpp.o: /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.h
 CMakeFiles/Proyecto3.dir/registro_usr.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant

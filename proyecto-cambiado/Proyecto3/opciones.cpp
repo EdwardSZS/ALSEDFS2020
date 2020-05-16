@@ -4,6 +4,7 @@
 #include "registro_paci.h"
 #include "inicio.h"
 
+
 opciones::opciones(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::opciones)
@@ -22,12 +23,14 @@ opciones::~opciones()
 }
 
 void opciones::on_Reg_paciente_clicked()
-{
+{  da.abrirDB("formulario_usr");
     registro_paci a (this);
     a.setModal (true);
     //close->(this);
     a.show();
     a.exec();
+    da.cargar_pac(a);
+    da.cerrarDB();
 }
 
 void opciones::on_Real_prueba_clicked()

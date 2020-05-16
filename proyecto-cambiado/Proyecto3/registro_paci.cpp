@@ -26,16 +26,18 @@ void registro_paci::on_Registra_paci_clicked()
 {
     QMessageBox msg;
 
-    string prn = ui->lineEdit_nombre->text().toStdString();
-    string pra = ui->lineEdit_apellido->text().toStdString();
-    int ed = ui->lineEdit_edad->text().toInt();
-    string prfn = ui->lineEdit_fn->text().toStdString();
-    int ni = ui->lineEdit_ni->text().toInt();
-    string pret = ui->lineEdit_etnia->text().toStdString();
-    float ing = ui->lineEdit_ingresos->text().toFloat();
+     nom = ui->lineEdit_nombre->text().toStdString();
+     ape = ui->lineEdit_apellido->text().toStdString();
+     edad = ui->lineEdit_edad->text().toInt();
+     fn = ui->lineEdit_fn->text().toStdString();
+     ni = ui->lineEdit_ni->text().toInt();
+     etnia = ui->lineEdit_etnia->text().toStdString();
+     ing = ui->lineEdit_ingresos->text().toFloat();
+     gen = ui->lineEdit_Gen->text().toStdString();
+     dir=ui->lineEdit_Dir->text().toStdString();
 
-    if(prn.empty() == true || pra.empty() == true || ed == 0 || prfn.empty() == true ||
-       ni == 0 || prfn.empty() == true|| ing == 0||pret.empty() == true)
+    if(nom.empty() == true || ape.empty() == true || edad == 0 || fn.empty() == true ||
+       ni == 0 || etnia.empty() == true)
     {
         msg.setText("Datos incompletos o mal llenados, por favor intente nuevamente.");
         msg.exec();
@@ -45,5 +47,95 @@ void registro_paci::on_Registra_paci_clicked()
         close();
     }
 
+}
+
+string registro_paci::getDir() const
+{
+    return dir;
+}
+
+void registro_paci::setDir(const string &value)
+{
+    dir = value;
+}
+
+string registro_paci::getGen() const
+{
+    return gen;
+}
+
+void registro_paci::setGen(const string &value)
+{
+    gen = value;
+}
+
+string registro_paci::getEtnia() const
+{
+    return etnia;
+}
+
+void registro_paci::setEtnia(const string &value)
+{
+    etnia = value;
+}
+
+float registro_paci::getIng() const
+{
+    return ing;
+}
+
+void registro_paci::setIng(float value)
+{
+    ing = value;
+}
+
+int registro_paci::getNi() const
+{
+    return ni;
+}
+
+void registro_paci::setNi(int value)
+{
+    ni = value;
+}
+
+string registro_paci::getFn() const
+{
+    return fn;
+}
+
+void registro_paci::setFn(const string &value)
+{
+    fn = value;
+}
+
+int registro_paci::getEdad() const
+{
+    return edad;
+}
+
+void registro_paci::setEdad(const int &value)
+{
+    edad = value;
+}
+
+string registro_paci::getApe() const
+{
+    return ape;
+}
+
+void registro_paci::setApe(const string &value)
+{
+    ape = value;
+}
+
+string registro_paci::getNom() const
+{
+    return nom;
+}
+
+void registro_paci::setNom(const string &value)
+{
+    nom = value;
 }
 

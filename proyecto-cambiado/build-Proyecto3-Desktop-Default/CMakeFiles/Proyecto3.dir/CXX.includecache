@@ -25,6 +25,8 @@ sqlite3.h
 -
 registro_usr.h
 /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.h
+registro_paci.h
+/home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_paci.h
 
 /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/conectardb.cpp
 conectardb.h
@@ -81,6 +83,8 @@ inicio.h
 /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/opciones.h
 QMainWindow
 -
+base_da.h
+/home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/base_da.h
 
 /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_paci.cpp
 registro_paci.h
@@ -96,6 +100,8 @@ QMessageBox
 
 /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_paci.h
 QDialog
+-
+string
 -
 
 /home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/Proyecto3/registro_usr.cpp
@@ -1338,6 +1344,10 @@ qstatusbar.h
 qtoolbar.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtoolbar.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout
+qboxlayout.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
 qwidget.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
@@ -1781,8 +1791,6 @@ QtWidgets/QButtonGroup
 -
 QtWidgets/QDialog
 -
-QtWidgets/QGridLayout
--
 QtWidgets/QGroupBox
 -
 QtWidgets/QHBoxLayout
@@ -1796,6 +1804,8 @@ QtWidgets/QLineEdit
 QtWidgets/QPushButton
 -
 QtWidgets/QSpacerItem
+-
+QtWidgets/QVBoxLayout
 -
 QtWidgets/QWidget
 -
