@@ -35,7 +35,7 @@ void registro_paci::on_Registra_paci_clicked()
     float ing = ui->lineEdit_ingresos->text().toFloat();
 
     if(prn.empty() == true || pra.empty() == true || ed == 0 || prfn.empty() == true ||
-       ni == 0 || prfn.empty() == true )
+       ni == 0 || prfn.empty() == true|| ing == 0||pret.empty() == true)
     {
         msg.setText("Datos incompletos o mal llenados, por favor intente nuevamente.");
         msg.exec();

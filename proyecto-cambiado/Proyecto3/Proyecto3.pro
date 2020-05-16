@@ -29,14 +29,16 @@ SOURCES += \
     inicio.cpp \
     registro_usr.cpp \
     ##basede_datos.cpp
-    registro_paci.cpp
+    registro_paci.cpp \
+    base_da.cpp
 
 HEADERS += \
         opciones.h \
     inicio.h \
     registro_usr.h \
     ##basede_datos.h
-    registro_paci.h
+    registro_paci.h \
+    base_da.h
 
 FORMS += \
         opciones.ui \

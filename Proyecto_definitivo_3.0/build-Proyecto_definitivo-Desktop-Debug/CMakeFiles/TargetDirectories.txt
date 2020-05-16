@@ -1,4 +1,0 @@
-/home/alseuser/Escritorio/Proyecto_definitivo/build-Proyecto_definitivo-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/alseuser/Escritorio/Proyecto_definitivo/build-Proyecto_definitivo-Desktop-Debug/CMakeFiles/Proyecto_definitivo_2.dir
-/home/alseuser/Escritorio/Proyecto_definitivo/build-Proyecto_definitivo-Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/alseuser/Escritorio/Proyecto_definitivo/build-Proyecto_definitivo-Desktop-Debug/CMakeFiles/Proyecto_definitivo_2_autogen.dir

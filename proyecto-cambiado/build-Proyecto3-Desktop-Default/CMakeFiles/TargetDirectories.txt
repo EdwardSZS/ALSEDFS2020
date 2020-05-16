@@ -1,0 +1,4 @@
+/home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/build-Proyecto3-Desktop-Default/CMakeFiles/rebuild_cache.dir
+/home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3.dir
+/home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/build-Proyecto3-Desktop-Default/CMakeFiles/edit_cache.dir
+/home/alseuser/Escritorio/ALSEDFS2020/proyecto-cambiado/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3_autogen.dir

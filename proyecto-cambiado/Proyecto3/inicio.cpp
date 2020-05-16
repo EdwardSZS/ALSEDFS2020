@@ -25,11 +25,14 @@ inicio::~inicio()
 }
 
 void inicio::on_Registrarse_clicked()
-{
+{ db.abrirDB("formulario_usr");
+
     //ingresar al formulario del USR para ello se debe ABRIR una ventana nueva y no olvidar que esta SIGUE ABIERTA
-    registro_usr a (this);
+    registro_usr a(this) ;
     a.show();
     a.exec();
+    db.cargar_usrs(a);
+    db.cerrarDB();
 }
 
 void inicio::on_ingreso_clicked()
