@@ -11,6 +11,13 @@
 
 using namespace std;
 
+/*!
+ * \brief opciones::opciones
+ * El constructor de esta clase deberia ir vacio, si concideramos que apenas iniciemos la aplicacion la ventana principal es
+ * la que se muestra, pero para efectos especificos de esta aplicacion nuestra ventana de opciones debe mostrase despues del
+ * acceso de un Usuario registrado. Esa es la razon por la cual esta fucnion tiene una accion de apertura de una ventana.
+ */
+
 opciones::opciones(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::opciones)

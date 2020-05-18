@@ -10,6 +10,13 @@ namespace Ui {
 class registro_paci;
 }
 
+/*!
+ * \brief The registro_paci class
+ * En esta clase se hace una analogia al puente que conecta al usuario con la base de datos, en lugar de realizar la intruduccion
+ * al sistema de una manera un poco menos amigable y vesatil, esta clase busca facilitar que la persona que sea paciente del sitema
+ * pueda ingresar sus datos personales y estos queden guardados de manera automatica para poder acceder a otro tipo de funciones
+ * que lo requieran.
+ */
 class registro_paci : public QDialog
 {
     Q_OBJECT

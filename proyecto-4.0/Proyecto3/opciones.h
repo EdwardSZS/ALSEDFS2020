@@ -8,6 +8,15 @@ namespace Ui {
 class opciones;
 }
 
+/*!
+ * \brief The opciones class
+ * Aquella clase que contiene a la ventana principal QMainWindow, esta resulta ser la clase que nos permite generar un flujo
+ * ciclico en la aplicacion. Sin importar dodne se esté dentro de de la aplicacio volvermeos a esta clase y a nivel visual
+ * estaremos de regreso a aquella ventana que fue diseñada para sus procesos, la clase principal es importante para entender
+ * que la forma en como se diseñan este tipo de aplicaciones son en principio acciones de retorno, extenciones de acciones que
+ * nos conducen al menu principal una vez estas se acaben.
+ */
+
 class opciones : public QMainWindow
 {
     Q_OBJECT

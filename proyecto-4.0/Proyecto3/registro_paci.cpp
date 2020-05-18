@@ -22,6 +22,13 @@ registro_paci::~registro_paci()
     cout<<"llamando al desct_REGISTRO_PACI"<<endl;
 }
 
+/*!
+ * \brief registro_paci::on_Registra_paci_clicked
+ * Buscando interconectar la clase de la base de datos con los datos introducidos en la interfaz grafica que se diseñó para el
+ * Paciente, esta funcion nace para interpretar aquellos valores intruducidos, y pasandolos a los atributos privados
+ * de esta clase.
+ */
+
 void registro_paci::on_Registra_paci_clicked()
 {
     QMessageBox msg;
@@ -48,6 +55,14 @@ void registro_paci::on_Registra_paci_clicked()
     }
 }
 
+/*!
+ * \brief registro_paci::getDir
+ * Esta pequeña funcion se puede entender como aquella que le da poder al atributo privado de poder ser admitida por la clase
+ * externa de la BD, y asi poder guardarla en los porceso que realiza dicha clase BD.
+ * Esto sucede analogamente para cada valor intriducido por el paciente en el formulario grafico.
+ *
+ * \return la variable privada que gracias a las funciones get-set nos permiten enviarlas a una clase diferente.
+ */
 string registro_paci::getDir() const
 {
     return dir;

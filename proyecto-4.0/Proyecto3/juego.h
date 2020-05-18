@@ -11,6 +11,14 @@ namespace Ui {
 class juego;
 }
 
+/*!
+ * \brief The juego class
+ * La clase de juego esta pensada para elaborar y mostrar todo aquello con la prueba de accion vista-mano,
+ * desde la exposicion de las reglas y toda la interfaz necesaria para que el usuario pueda sin ningun problema
+ * "viajar" por el paso a paso de la misma hasta culminarla, hasta internamente guardar contar y procesar los resultados
+ * para mostrarlos un instante despues de que esta halla terminado.
+ * \brief
+ */
 class juego : public QDialog
 {
     Q_OBJECT
