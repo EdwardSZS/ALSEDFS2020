@@ -35,19 +35,31 @@ juego::~juego()
 void juego::ontime()
 {
     ui->cronos->display( --contador );
-    activo = rand() %9;
+    activo = 1 + rand() %8;
 
     ui->b1->setDisabled( true );
+    ui->b1->setVisible(false);
     ui->b2->setDisabled( true );
+    ui->b2->setVisible(false);
     ui->b3->setDisabled( true );
+    ui->b3->setVisible(false);
     ui->b4->setDisabled( true );
+    ui->b4->setVisible(false);
     ui->b5->setDisabled( true );
+    ui->b5->setVisible(false);
     ui->b6->setDisabled( true );
+    ui->b6->setVisible(false);
     ui->b7->setDisabled( true );
+    ui->b7->setVisible(false);
     ui->b8->setDisabled( true );
+    ui->b8->setVisible(false);
 
     mecanismoA();
 
+    c++;
+    p++;
+
+    cout<<c<<endl;
 
     if( contador == 0 )
     {
@@ -101,34 +113,54 @@ void juego::mecanismoA()
     case 1:
         activo = 1;
         ui->b1->setEnabled( true );
+        ui->b1->setVisible( true );
+        if(ui->b1->isChecked() == true)
+        {
+            s[c] = p;
+            st[c] = contador;
+            cout<<"si"<<endl;
+        }
+        else
+        {
+            n[c] = p;
+            nt[c] = contador;
+            cout<<"no"<<endl;
+        }
         break;
     case 2:
         activo = 2;
         ui->b2->setEnabled( true );
+        ui->b2->setVisible(true);
         break;
     case 3:
         activo = 3;
         ui->b3->setEnabled( true );
+        ui->b3->setVisible(true);
         break;
     case 4:
         activo = 4;
         ui->b4->setEnabled( true );
+        ui->b4->setVisible(true);
         break;
     case 5:
         activo = 5;
         ui->b5->setEnabled( true );
+        ui->b5->setVisible(true);
         break;
     case 6:
         activo = 6;
         ui->b6->setEnabled( true );
+        ui->b6->setVisible(true);
         break;
     case 7:
         activo = 7;
         ui->b7->setEnabled( true );
+        ui->b7->setVisible(true);
         break;
     case 8:
         activo = 8;
         ui->b8->setEnabled( true );
+        ui->b8->setVisible(true);
         break;
     default:
         break;

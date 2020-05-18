@@ -4,16 +4,16 @@
 #include "registro_usr.h"
 #include "registro_paci.h"
 
-
 base_da::base_da()
 {
-
 }
 
 bool base_da::abrirDB(string path)
-{int rc;
+{
+    int rc;
 
-    ///* Open database
+    /*Open DataBase*/
+
     rc = sqlite3_open( path.c_str() , &db);
 
     if( rc ) {
@@ -47,7 +47,9 @@ bool base_da::cargar_usrs(registro_usr &usr){
         sql << usr.getUsr() << "', '" << usr.getPass() <<  "');" ;
         std::cout << usr.getName() << std::endl;
         std::cout << sql.str() << std::endl;
+
         /* Execute SQL statement */
+
         rc = sqlite3_exec(db, sql.str().c_str(), 0, 0, &zErrMsg);
 
         if( rc != SQLITE_OK ){
@@ -62,7 +64,8 @@ bool base_da::cargar_usrs(registro_usr &usr){
 }
 
 bool base_da::cargar_pac(registro_paci &pac)
-{/*TABLE `Dato_paciente` (
+{
+    /*TABLE `Dato_paciente` (
     `Nombre`	TEXT NOT NULL,
     `Apellido`	TEXT NOT NULL,
     `Doc_id`	INTEGER NOT NULL UNIQUE PRIMARY KEY,
@@ -76,6 +79,7 @@ bool base_da::cargar_pac(registro_paci &pac)
         int rc;
 
         std::stringstream sql;
+
         /* Create SQL statement */
 
         sql <<"INSERT INTO Dato_paciente (Nombre, Apellido, Doc_id, FNAC, " \

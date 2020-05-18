@@ -3,6 +3,9 @@
 
 #include <QDialog>
 #include <QTimer>
+#include <vector>
+
+using namespace std;
 
 namespace Ui {
 class juego;
@@ -47,6 +50,7 @@ private slots:
     void on_b8_clicked();
 
 private:
+    int s[30], n[30], st[30], nt[30], c=0, p=1;
     Ui::juego *ui;
     int contador;
     char activo;

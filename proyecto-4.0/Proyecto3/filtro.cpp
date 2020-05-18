@@ -19,14 +19,22 @@ filtro::filtro(QWidget *parent) :
 filtro::~filtro()
 {
     delete ui;
+
     cout<<"llamando destr_FILTRO"<<endl;
 }
 
+/*!
+ * \brief filtro::on_Continuar_clicked
+ * Se usa si y solo si se oprime el boton Ok para poder continuar en el flujo del programa.
+ */
+
 void filtro::on_Continuar_clicked()
 {
-    QMessageBox msg;
-    int ni = ui->lineEdit_NI->text().toInt();
-    //DEBEMOS AÑADIR EL EXIST DE LA BD, PARA SABER SI SE REGISTRÓ
+    QMessageBox msg; /*! <es aguella variable que gracias a la libreria QMessageBox nos permitira emitir una ventana
+                        emergente indicando error en los datos*/
+
+    int ni = ui->lineEdit_NI->text().toInt(); /*! <es la variable en la cual recae la traduccion del sector grafico
+                                                de la ventana (casilla de entrada) a una variable de tipo entero*/
 
     if(ni == 0) //O NO ESTA
     {
@@ -35,8 +43,9 @@ void filtro::on_Continuar_clicked()
     }
     else
     {
-        // SI EL EXIST ARROJÓ UN VALOR, ni==
-        juego a (this);
+        // SI EL SELEC ARROJÓ UN VALOR, ni==
+        juego a (this); /*! <nos describe que cuando un valor fue exitosamente verificado y existente, nos remitimos
+                            a la apertura del panel de juegos*/
         a.showMaximized();
         a.exec();
         close();

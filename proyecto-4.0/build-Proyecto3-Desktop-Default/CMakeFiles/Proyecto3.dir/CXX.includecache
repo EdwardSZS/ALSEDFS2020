@@ -103,6 +103,8 @@ QDialog
 -
 QTimer
 -
+vector
+-
 
 /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/main.cpp
 opciones.h

@@ -3,6 +3,13 @@
 
 #include <QDialog>
 
+/*!
+ * \brief The filtro class
+ * Diseñado para poder verificar si un usuario ha sido registrado para poder introducirlo
+ * a la ventana del juego.
+ * \details
+ */
+
 namespace Ui {
 class filtro;
 }
