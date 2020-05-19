@@ -59,6 +59,8 @@ private slots:
 
     void on_b8_clicked();
 
+    void on_Listo_clicked();
+
 private:
 
     Ui::juego *ui;

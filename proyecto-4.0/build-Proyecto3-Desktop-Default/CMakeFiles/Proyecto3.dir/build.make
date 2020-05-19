@@ -201,33 +201,9 @@ CMakeFiles/Proyecto3.dir/base_da.cpp.o.provides: CMakeFiles/Proyecto3.dir/base_d
 CMakeFiles/Proyecto3.dir/base_da.cpp.o.provides.build: CMakeFiles/Proyecto3.dir/base_da.cpp.o
 
 
-CMakeFiles/Proyecto3.dir/conectardb.cpp.o: CMakeFiles/Proyecto3.dir/flags.make
-CMakeFiles/Proyecto3.dir/conectardb.cpp.o: /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/conectardb.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Proyecto3.dir/conectardb.cpp.o"
-	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto3.dir/conectardb.cpp.o -c /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/conectardb.cpp
-
-CMakeFiles/Proyecto3.dir/conectardb.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto3.dir/conectardb.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/conectardb.cpp > CMakeFiles/Proyecto3.dir/conectardb.cpp.i
-
-CMakeFiles/Proyecto3.dir/conectardb.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto3.dir/conectardb.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/conectardb.cpp -o CMakeFiles/Proyecto3.dir/conectardb.cpp.s
-
-CMakeFiles/Proyecto3.dir/conectardb.cpp.o.requires:
-
-.PHONY : CMakeFiles/Proyecto3.dir/conectardb.cpp.o.requires
-
-CMakeFiles/Proyecto3.dir/conectardb.cpp.o.provides: CMakeFiles/Proyecto3.dir/conectardb.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Proyecto3.dir/build.make CMakeFiles/Proyecto3.dir/conectardb.cpp.o.provides.build
-.PHONY : CMakeFiles/Proyecto3.dir/conectardb.cpp.o.provides
-
-CMakeFiles/Proyecto3.dir/conectardb.cpp.o.provides.build: CMakeFiles/Proyecto3.dir/conectardb.cpp.o
-
-
 CMakeFiles/Proyecto3.dir/filtro.cpp.o: CMakeFiles/Proyecto3.dir/flags.make
 CMakeFiles/Proyecto3.dir/filtro.cpp.o: /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/filtro.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Proyecto3.dir/filtro.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Proyecto3.dir/filtro.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto3.dir/filtro.cpp.o -c /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/filtro.cpp
 
 CMakeFiles/Proyecto3.dir/filtro.cpp.i: cmake_force
@@ -251,7 +227,7 @@ CMakeFiles/Proyecto3.dir/filtro.cpp.o.provides.build: CMakeFiles/Proyecto3.dir/f
 
 CMakeFiles/Proyecto3.dir/juego.cpp.o: CMakeFiles/Proyecto3.dir/flags.make
 CMakeFiles/Proyecto3.dir/juego.cpp.o: /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/juego.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Proyecto3.dir/juego.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Proyecto3.dir/juego.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto3.dir/juego.cpp.o -c /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/juego.cpp
 
 CMakeFiles/Proyecto3.dir/juego.cpp.i: cmake_force
@@ -275,7 +251,7 @@ CMakeFiles/Proyecto3.dir/juego.cpp.o.provides.build: CMakeFiles/Proyecto3.dir/ju
 
 CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.o: CMakeFiles/Proyecto3.dir/flags.make
 CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.o: Proyecto3_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.o"
 	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.o -c /home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/Proyecto3_autogen/mocs_compilation.cpp
 
 CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.i: cmake_force
@@ -305,7 +281,6 @@ Proyecto3_OBJECTS = \
 "CMakeFiles/Proyecto3.dir/registro_usr.cpp.o" \
 "CMakeFiles/Proyecto3.dir/registro_paci.cpp.o" \
 "CMakeFiles/Proyecto3.dir/base_da.cpp.o" \
-"CMakeFiles/Proyecto3.dir/conectardb.cpp.o" \
 "CMakeFiles/Proyecto3.dir/filtro.cpp.o" \
 "CMakeFiles/Proyecto3.dir/juego.cpp.o" \
 "CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.o"
@@ -319,7 +294,6 @@ Proyecto3: CMakeFiles/Proyecto3.dir/inicio.cpp.o
 Proyecto3: CMakeFiles/Proyecto3.dir/registro_usr.cpp.o
 Proyecto3: CMakeFiles/Proyecto3.dir/registro_paci.cpp.o
 Proyecto3: CMakeFiles/Proyecto3.dir/base_da.cpp.o
-Proyecto3: CMakeFiles/Proyecto3.dir/conectardb.cpp.o
 Proyecto3: CMakeFiles/Proyecto3.dir/filtro.cpp.o
 Proyecto3: CMakeFiles/Proyecto3.dir/juego.cpp.o
 Proyecto3: CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.o
@@ -328,7 +302,7 @@ Proyecto3: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.9.5
 Proyecto3: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.9.5
 Proyecto3: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.9.5
 Proyecto3: CMakeFiles/Proyecto3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Proyecto3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Proyecto3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Proyecto3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -342,7 +316,6 @@ CMakeFiles/Proyecto3.dir/requires: CMakeFiles/Proyecto3.dir/inicio.cpp.o.require
 CMakeFiles/Proyecto3.dir/requires: CMakeFiles/Proyecto3.dir/registro_usr.cpp.o.requires
 CMakeFiles/Proyecto3.dir/requires: CMakeFiles/Proyecto3.dir/registro_paci.cpp.o.requires
 CMakeFiles/Proyecto3.dir/requires: CMakeFiles/Proyecto3.dir/base_da.cpp.o.requires
-CMakeFiles/Proyecto3.dir/requires: CMakeFiles/Proyecto3.dir/conectardb.cpp.o.requires
 CMakeFiles/Proyecto3.dir/requires: CMakeFiles/Proyecto3.dir/filtro.cpp.o.requires
 CMakeFiles/Proyecto3.dir/requires: CMakeFiles/Proyecto3.dir/juego.cpp.o.requires
 CMakeFiles/Proyecto3.dir/requires: CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.o.requires

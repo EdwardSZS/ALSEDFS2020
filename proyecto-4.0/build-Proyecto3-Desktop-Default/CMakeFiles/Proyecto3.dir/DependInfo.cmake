@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/Proyecto3_autogen/mocs_compilation.cpp" "/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.o"
   "/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/base_da.cpp" "/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3.dir/base_da.cpp.o"
-  "/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/conectardb.cpp" "/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3.dir/conectardb.cpp.o"
   "/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/filtro.cpp" "/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3.dir/filtro.cpp.o"
   "/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/inicio.cpp" "/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3.dir/inicio.cpp.o"
   "/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/juego.cpp" "/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3.dir/juego.cpp.o"

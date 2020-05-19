@@ -22,10 +22,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QTableView>
-#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QTextBrowser>
-#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -54,26 +51,22 @@ public:
     QPushButton *push1min;
     QPushButton *push30s;
     QSpacerItem *horizontalSpacer;
-    QTableWidget *tableWidget;
-    QWidget *widget;
-    QVBoxLayout *verticalLayout;
-    QTableView *tableView;
     QPushButton *Listo;
 
     void setupUi(QDialog *juego)
     {
         if (juego->objectName().isEmpty())
             juego->setObjectName(QStringLiteral("juego"));
-        juego->resize(1320, 639);
+        juego->resize(1320, 653);
         juego->setStyleSheet(QStringLiteral("background-color: rgb(46, 52, 54);"));
         groupBox = new QGroupBox(juego);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(430, 10, 561, 461));
+        groupBox->setGeometry(QRect(430, 10, 561, 451));
         groupBox->setStyleSheet(QStringLiteral("background-color: rgb(211, 215, 207);"));
         b8 = new QPushButton(groupBox);
         b8->setObjectName(QStringLiteral("b8"));
         b8->setEnabled(false);
-        b8->setGeometry(QRect(490, 400, 61, 51));
+        b8->setGeometry(QRect(490, 390, 61, 51));
         b8->setStyleSheet(QStringLiteral("background-color: rgb(138, 226, 52);"));
         b2 = new QPushButton(groupBox);
         b2->setObjectName(QStringLiteral("b2"));
@@ -105,7 +98,7 @@ public:
         b7 = new QPushButton(groupBox);
         b7->setObjectName(QStringLiteral("b7"));
         b7->setEnabled(false);
-        b7->setGeometry(QRect(10, 400, 61, 51));
+        b7->setGeometry(QRect(10, 390, 61, 51));
         b7->setStyleSheet(QStringLiteral("background-color: rgb(138, 226, 52);"));
         b3 = new QPushButton(groupBox);
         b3->setObjectName(QStringLiteral("b3"));
@@ -114,7 +107,7 @@ public:
         b3->setStyleSheet(QStringLiteral("background-color: rgb(138, 226, 52);"));
         cronos = new QLCDNumber(groupBox);
         cronos->setObjectName(QStringLiteral("cronos"));
-        cronos->setGeometry(QRect(250, 420, 81, 41));
+        cronos->setGeometry(QRect(250, 410, 81, 41));
         cronos->setStyleSheet(QLatin1String("background-color: rgb(136, 138, 133);\n"
 "background-color: rgb(46, 52, 54);"));
         textBrowser = new QTextBrowser(juego);
@@ -124,7 +117,7 @@ public:
         textBrowser->setReadOnly(true);
         layoutWidget = new QWidget(juego);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, 310, 291, 161));
+        layoutWidget->setGeometry(QRect(10, 310, 291, 141));
         gridLayout = new QGridLayout(layoutWidget);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         gridLayout->setContentsMargins(0, 0, 0, 0);
@@ -174,38 +167,11 @@ public:
 
         gridLayout->addItem(horizontalSpacer, 0, 1, 1, 1);
 
-        tableWidget = new QTableWidget(juego);
-        if (tableWidget->columnCount() < 1)
-            tableWidget->setColumnCount(1);
-        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
-        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
-        if (tableWidget->rowCount() < 1)
-            tableWidget->setRowCount(1);
-        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
-        tableWidget->setVerticalHeaderItem(0, __qtablewidgetitem1);
-        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
-        tableWidget->setItem(0, 0, __qtablewidgetitem2);
-        tableWidget->setObjectName(QStringLiteral("tableWidget"));
-        tableWidget->setGeometry(QRect(760, 500, 256, 192));
-        widget = new QWidget(juego);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(1010, 10, 291, 611));
-        verticalLayout = new QVBoxLayout(widget);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        tableView = new QTableView(widget);
-        tableView->setObjectName(QStringLiteral("tableView"));
-        tableView->setEnabled(false);
-        tableView->setStyleSheet(QStringLiteral("background-color: rgb(186, 189, 182);"));
-
-        verticalLayout->addWidget(tableView);
-
-        Listo = new QPushButton(widget);
+        Listo = new QPushButton(juego);
         Listo->setObjectName(QStringLiteral("Listo"));
-        Listo->setStyleSheet(QStringLiteral("background-color: rgb(114, 159, 207);"));
-
-        verticalLayout->addWidget(Listo);
-
+        Listo->setGeometry(QRect(10, 470, 391, 91));
+        Listo->setStyleSheet(QLatin1String("background-color: rgb(114, 159, 207);\n"
+"background-color: rgb(252, 233, 79);"));
 
         retranslateUi(juego);
 
@@ -243,18 +209,7 @@ public:
         push5min->setText(QApplication::translate("juego", "5min", Q_NULLPTR));
         push1min->setText(QApplication::translate("juego", "1min", Q_NULLPTR));
         push30s->setText(QApplication::translate("juego", "30s", Q_NULLPTR));
-        QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("juego", "New Column", Q_NULLPTR));
-        QTableWidgetItem *___qtablewidgetitem1 = tableWidget->verticalHeaderItem(0);
-        ___qtablewidgetitem1->setText(QApplication::translate("juego", "New Row", Q_NULLPTR));
-
-        const bool __sortingEnabled = tableWidget->isSortingEnabled();
-        tableWidget->setSortingEnabled(false);
-        QTableWidgetItem *___qtablewidgetitem2 = tableWidget->item(0, 0);
-        ___qtablewidgetitem2->setText(QApplication::translate("juego", "uu", Q_NULLPTR));
-        tableWidget->setSortingEnabled(__sortingEnabled);
-
-        Listo->setText(QApplication::translate("juego", "Listo", Q_NULLPTR));
+        Listo->setText(QApplication::translate("juego", "Terminar", Q_NULLPTR));
     } // retranslateUi
 
 };

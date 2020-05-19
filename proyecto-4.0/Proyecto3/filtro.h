@@ -9,7 +9,6 @@
  * a la ventana del juego.
  * \details
  */
-
 namespace Ui {
 class filtro;
 }

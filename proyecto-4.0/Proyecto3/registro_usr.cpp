@@ -25,6 +25,13 @@ registro_usr::~registro_usr()
     cout<<"llamando dest_FORMULARIO_USR"<<endl;
 }
 
+/*!
+ * \brief registro_usr::on_Ok_clicked
+ * De manera muy similar a los registros de pacientes, esta funcion se encarga de recopilar y traducir de las lineas de texto
+ * que se presentan en la ventana, a valores entendidos por el lenguaje de programacion, para ser emitidas y enviadas a la base de
+ * datos, en caso de ser erroneo la forma de completar los datos, el sitema enviará una advertencia de error a la persona para que
+ * corrija su proceso.
+ */
 void registro_usr::on_Ok_clicked()
 {
    QMessageBox msg;
@@ -49,7 +56,14 @@ void registro_usr::on_Ok_clicked()
         }
 }
 
-
+/*!
+ * \brief registro_usr::getN_id
+ * Esta pequeña funcion se puede entender como aquella que le da poder al atributo privado de poder ser admitida por la clase
+ * externa de la BD, y asi poder guardarla en los porceso que realiza dicha clase BD.
+ * Esto sucede analogamente para cada valor intriducido por el paciente en el formulario grafico.
+ *
+ * \return la variable privada que gracias a las funciones get-set nos permiten enviarlas a una clase diferente.
+ */
 int registro_usr::getN_id() const
 {
     return n_id;

@@ -14,27 +14,30 @@ using namespace std;
 /*!
  * \brief juego::juego
  * \param parent
- * En este constructor se realizan unas acciones muy utiles para el proceso correcto de la ventana en si; debido a que se proyecta
- * como aquella que procesa y cuenta los tiempos de la prubea junto con los puntajes, el constructor se encarga de inicializar, contar
- * y llamar al temporizador y su clase, para porder mostrarlo al publico por medio de un display, esto es permitido gracias a QTimer quien
- * nos ayuda con funciones de conteos y todo quello relacionado con tiempos y cronometros.
+ * En este constructor se realizan unas acciones muy utiles para el proceso correcto de la ventana en si; debido a que se
+ * proyecta como aquella que procesa y cuenta los tiempos de la prubea junto con los puntajes, el constructor se encarga
+ * de inicializar, contar y llamar al temporizador y su clase, para porder mostrarlo al publico por medio de un display,
+ * esto es permitido gracias a QTimer quien nos ayuda con funciones de conteos y todo quello relacionado con tiempos y
+ * cronometros.
  */
 
 juego::juego(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::juego)
 {
-    contador=0; /*!< Debemos inicializar el contador en cero para hacer de cuenta que al inicion del contador este se encuentra en cero.*/
+    contador=0; /*!< Debemos inicializar el contador en cero para hacer de cuenta que al inicion del contador este
+                    se encuentra en cero.*/
     ui->setupUi(this);
     tv=0;
     x=0;
-    ui->cronos->display( contador ); /*!< esta funcion toma el valor actual de la variable \param contador y la muestra en el display.*/
+    ui->cronos->display( contador ); /*!< esta funcion toma el valor actual de la variable \param contador y la muestra
+                                          en el display.*/
 
     cronometro = new QTimer(this); /*!< Inicializacion del \param conometro quien es el que se encragara
-                                    de el tiempo de duracion entre conteos.*/
+                                        de el tiempo de duracion entre conteos.*/
 
-    connect(cronometro, &QTimer::timeout, this, &juego::ontime); /*!< Utilizamos un connect "especial", quein nos conecta con las funciones de QTimer
-                                                                  y las redirijimos a la funcion ontime.*/
+    connect(cronometro, &QTimer::timeout, this, &juego::ontime); /*!< Utilizamos un connect "especial", quein nos conecta con las funciones
+                                                                      de QTimer y las redirijimos a la funcion ontime.*/
 
     cronometro->setInterval(1000); /*!< aqui es donde definimos el intervalo de duracion en milisegundos,
                                     que para nuestro caso es el equivalente a 1s.*/
@@ -57,67 +60,76 @@ void juego::ontime()
 {
     ui->cronos->display( --contador ); /*!< en esta linea se muestra en el display la cuenta regresiva desde el valor inicializado hasta 0*/
 
-    activo = 1 + rand() %8; /*!< Generacion de un numero aleatorio entre 1 y 8, quienes seran los estados que abilitaran los 8 botones */
+    activo = 1 + rand() %8; /*!< Generacion de un numero aleatorio entre 1 y 8, quienes seran los estados que abilitaran
+                                los 8 botones */
 
-    ui->b1->setDisabled( true );    ///////////////////////////////////////////////////////////////
-    ui->b1->setVisible(false);      ///
-    ui->b2->setDisabled( true );    ///
-    ui->b2->setVisible(false);      ///
-    ui->b3->setDisabled( true );    ///
-    ui->b3->setVisible(false);      ///
-    ui->b4->setDisabled( true );    /// En este acumulado de lineas buscamos ocultar y deshabilitar
-    ui->b4->setVisible(false);      /// todos los botones antes de entrar a elejir uno especifico
-    ui->b5->setDisabled( true );    /// definido por el valor aleatorio de estdos en la vriable
-    ui->b5->setVisible(false);      /// \param activo.
-    ui->b6->setDisabled( true );    ///
-    ui->b6->setVisible(false);      ///
-    ui->b7->setDisabled( true );    ///
-    ui->b7->setVisible(false);      ///
-    ui->b8->setDisabled( true );    ///
-    ui->b8->setVisible(false);      ///////////////////////////////////////////////////////////////
+    ui->b1->setDisabled( true );    /// En este acumulado de lineas buscamos ocultar y deshabilitar
+    ui->b1->setVisible(false);      /// todos los botones antes de entrar a elejir uno especifico
+    ui->b2->setDisabled( true );    /// definido por el valor aleatorio de estdos en la vriable
+    ui->b2->setVisible(false);
+    ui->b3->setDisabled( true );
+    ui->b3->setVisible(false);
+    ui->b4->setDisabled( true );
+    ui->b4->setVisible(false);
+    ui->b5->setDisabled( true );
+    ui->b5->setVisible(false);
+    ui->b6->setDisabled( true );
+    ui->b6->setVisible(false);
+    ui->b7->setDisabled( true );
+    ui->b7->setVisible(false);
+    ui->b8->setDisabled( true );
+    ui->b8->setVisible(false);
+    ui->Listo->setVisible(false);
 
     mecanismoA(); /*!< Cuando el valor aleatorio halla sido seleciconado y los botones deshabilitados e invisibles, entramos
                        a seleccionar cual unico boton se encenderá*/
+
     if( contador == 0 )
     {
-        //resultados a (this);
-        //a.setModal(true);
-        //close();
-        //a.show();
-        //a.exec();
+        QMessageBox m1;
+
+        m1.setText("Gracias por participar, si gusta observar sus aciertos dirijase a la consola de salida (Application Output) en "
+                   "el panel inferior de la aplicacion QT5 para ver detalladamnete su proceso.");
+        m1.exec();
+
+        ui->Listo->setVisible(true);
+        cronometro->stop();
+        ui->groupBox->setVisible(false);
+        ui->gridLayout->setEnabled(false);
     }
     else
         cronometro->start(); /*!< Damos luz verde para que la variable \param cronometro pase al siguiente valor en decenso*/
 }
 
-void juego::on_push30s_clicked()    /////////////////////////////////////////////
-{                                   ///
-    contador = 30;                  ///
+/*!
+* \brief juego::on_push30s_clicked
+* Aquellas funciones permiten darle valor inicial al la variable \param contador y asi empezar a contar en la funcion ontime,
+* nos referimos a las tres funciones siguientes que realizan los mismos procesos.
+*/
+void juego::on_push30s_clicked()
+{
+    contador = 30;
     cronometro->start();
-    tv = 30;                ///
-}                                   ///
-                                    ///
-void juego::on_push1min_clicked()   /// \brief juego::on_push30s_clicked
-{                                   /// \brief juego::on_push1min_clicked
-    contador = 60;                  /// \brief juego::on_push5min_clicked
+    tv = 30;
+}
+void juego::on_push1min_clicked()
+{
+    contador = 60;
     cronometro->start();
-    tv = 60;  ///
-}                                   /// Aquellas funciones permiten darle valor inicial
-                                    /// al la variable \param contador y asi empezar a contar
-void juego::on_push5min_clicked()   /// en la funcion ontime.
-{                                   ///
-    contador = 300;                 ///
+    tv = 60;
+}
+void juego::on_push5min_clicked()
+{
+    contador = 300;
     cronometro->start();
-    tv = 300;                 ///
-}                                   ///
-                                    ///////////////////////////////////////////////
+    tv = 300;
+}
 
 /*!
  * \brief juego::on_pushok_clicked
  * A diferencia de las funciones anteriroes de inicializacion del \param contador , esta funcion toma de la entrada grafica
  * el valor del tiempo y lo traduce para poder inicializar el contador a gusto del usuario.
  */
-
 void juego::on_pushok_clicked()
 {
     QMessageBox msg;
@@ -138,9 +150,8 @@ void juego::on_pushok_clicked()
 /*!
  * \brief juego::mecanismoA
  * Cuando se desabilitaron los botones en ontime, la funcion de mecanismoA tiene el trabajo de mostrar solo un boton, al azar,
- * durando un segundo en accion hasta cambiar a otro.
+ * durando un segundo en accion hasta cambiar a otro, en este casos precentamos 8 posibles opciones.
  */
-
 void juego::mecanismoA()
 {
     switch ( activo ) {
@@ -192,13 +203,13 @@ void juego::mecanismoA()
 /*!
  * \brief juego::on_b1_clicked
  * Cada botón que se encienda en un detemrinado momento debe ser enparejado con una accion, esa accion la tomamos como el click
- * que se le debe hacer al mismo, ese es el propocito por el cual se genreraron funciones de accion Clicked por cada uno.
+ * que se le debe hacer al mismo, ese es el proposito por el cual se genreraron funciones de accion Clicked por cada boton.
  */
-
 void juego::on_b1_clicked()
 {
-    i=1;
-    vecarga();
+    i=1;        /*!< Por cada boton hemos intruducido un valor caracteristico, el cual nos permitirá saber en un proximo momento
+                    que boton fue oprimido, todo esto con el fin de mostrar los valores mas adelante.*/
+    vecarga();  /*!< Llamado a aquella funcion que permite guardar la identificacion de cada boton cuando se hizo el click*/
 }
 
 void juego::on_b2_clicked()
@@ -243,14 +254,21 @@ void juego::on_b8_clicked()
     vecarga();
 }
 
+/*!
+ * \brief juego::vecarga
+ * Funcion diseñada con el proposito de poder contar, y guardar por cada segundo si un boton fue accionado o no,
+ * dejando en vectores tales datos, por si se quiere en un fururo mostralos, pero en este codigo se pueden evidenciar
+ * en la consola de salida.
+ */
 void juego::vecarga()
 {
     int vec_aci[tv];
     int vec_tie[tv];
+    string segundos, botones;
 
     vec_aci[x]=i;
 
-    if(i)
+    if(i=0)
     {   vec_aci[x]=0;
         vec_tie[x]=contador;
     }
@@ -258,6 +276,19 @@ void juego::vecarga()
     {
     vec_tie[x]=contador;
     }
-    cout<<vec_aci[x]<<endl;
-    cout<<vec_tie[x]<<endl;
+    cout<<" Tiempo (s): "<<vec_tie[x]<<", Boton de acierto: "<<vec_aci[x]<<endl;
+
+    //segundos = to_string(vec_tie[x]);
+    //ui->Segundos->setText( QString( (segundos).c_str() ) );
+}
+
+/*!
+ * \brief juego::on_Listo_clicked
+ * aquella funcion final que cerraria la ventana de juego y juneto a ellas las otras ventanas que anteriormente se usaron para llegar
+ * a esta, hasta la ventana principal de las opciones.
+ */
+
+void juego::on_Listo_clicked()
+{
+    close();
 }

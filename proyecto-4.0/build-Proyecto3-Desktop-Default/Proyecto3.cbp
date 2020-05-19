@@ -120,12 +120,6 @@
 		<Unit filename="/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/base_da.h">
 			<Option target="Proyecto3"/>
 		</Unit>
-		<Unit filename="/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/conectardb.cpp">
-			<Option target="Proyecto3"/>
-		</Unit>
-		<Unit filename="/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/conectardb.h">
-			<Option target="Proyecto3"/>
-		</Unit>
 		<Unit filename="/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/filtro.cpp">
 			<Option target="Proyecto3"/>
 		</Unit>

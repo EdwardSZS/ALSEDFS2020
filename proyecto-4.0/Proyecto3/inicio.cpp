@@ -64,11 +64,10 @@ void inicio::on_ingreso_clicked()
     else
     {
         db.abrirDB("formulario_usr");
-        if(db.autenticar_usr(usr,ctr) == true); /*! <Este condicional ejecuta la comparacion boleana de la existencia
+        if(db.autenticar_usr(usr,ctr) == true); /*!< Este condicional ejecuta la comparacion boleana de la existencia
                                                    de los datos de usuario y contraseña para asi poder acceder al menu principal.*/
         db.cerrarDB();
         close();
     }
 
 }
-

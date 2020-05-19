@@ -7,7 +7,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto3.dir/registro_usr.cpp.o"
   "CMakeFiles/Proyecto3.dir/registro_paci.cpp.o"
   "CMakeFiles/Proyecto3.dir/base_da.cpp.o"
-  "CMakeFiles/Proyecto3.dir/conectardb.cpp.o"
   "CMakeFiles/Proyecto3.dir/filtro.cpp.o"
   "CMakeFiles/Proyecto3.dir/juego.cpp.o"
   "CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.o"

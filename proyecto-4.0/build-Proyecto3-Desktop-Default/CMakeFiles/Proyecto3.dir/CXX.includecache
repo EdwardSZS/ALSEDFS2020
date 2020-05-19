@@ -28,10 +28,6 @@ registro_usr.h
 registro_paci.h
 /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/registro_paci.h
 
-/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/conectardb.cpp
-conectardb.h
-/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/conectardb.h
-
 /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/conectardb.h
 base_da.h
 /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/base_da.h
@@ -1456,14 +1452,6 @@ qlayoutitem.h
 qstatusbar.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstatusbar.h
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTableView
-qtableview.h
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtableview.h
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTableWidget
-qtablewidget.h
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtablewidget.h
-
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextBrowser
 qtextbrowser.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextbrowser.h
@@ -1802,22 +1790,6 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qwidget.h
 -
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtableview.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qabstractitemview.h
--
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtablewidget.h
-QtWidgets/qtwidgetsglobal.h
--
-QtWidgets/qtableview.h
--
-QtCore/qvariant.h
--
-QtCore/qvector.h
--
-
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -1973,13 +1945,7 @@ QtWidgets/QPushButton
 -
 QtWidgets/QSpacerItem
 -
-QtWidgets/QTableView
--
-QtWidgets/QTableWidget
--
 QtWidgets/QTextBrowser
--
-QtWidgets/QVBoxLayout
 -
 QtWidgets/QWidget
 -

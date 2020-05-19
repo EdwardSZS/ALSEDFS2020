@@ -10,6 +10,13 @@ namespace Ui {
 class registro_usr;
 }
 
+/*!
+ * \brief The registro_usr class
+ * De manera muy similar a la clase de el registro para el paciente, esta clase permite a las variables retomadas de la interfaz
+ * grafica, viajar hacia la BD, para poder ser almacenadas y en casos algunos procesadas, como ocurre con la edad. Todo esto
+ * a travez de un proceso de ventana (Gui) para hacer el procesos no tan tosco para una persona que no tenega conociminetos en
+ * programacion.
+ */
 class registro_usr : public QDialog
 {
     Q_OBJECT

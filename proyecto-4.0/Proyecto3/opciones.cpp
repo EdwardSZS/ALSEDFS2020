@@ -36,6 +36,11 @@ opciones::~opciones()
     cout<<"llamando al desct_REGISTRO_OPCIONES"<<endl;
 }
 
+/*!
+ * \brief opciones::on_Reg_paciente_clicked
+ * Fundamentalmente esta mini fución se encarga de tomar la ventana emergente del formulario para la creacion de un nuevo paciente,
+ * traducir la informacion de las entradas de texto y cargar esa informacion a la base de datos.
+ */
 void opciones::on_Reg_paciente_clicked()
 {
     da.abrirDB("formulario_usr");
@@ -47,6 +52,11 @@ void opciones::on_Reg_paciente_clicked()
     da.cerrarDB();
 }
 
+/*!
+ * \brief opciones::on_Real_prueba_clicked
+ * Esta funcion es la encargada de realizar el hilo de ventanas mas largo de esta aplicacion, comenzando con la ventana de filtro,
+ * y verificacion de la existencia de un paciente, terminando con el panel de juego.
+ */
 void opciones::on_Real_prueba_clicked()
 {
     filtro b (this);
@@ -55,6 +65,11 @@ void opciones::on_Real_prueba_clicked()
     b.exec();
 }
 
+/*!
+ * \brief opciones::on_Edit_usr_clicked
+ * Al igual que la funcion on_Reg_Paciente_clicked esta funcion realiza el mismo proceso de "traduccion" pero ahora para la creacion
+ * de un nuevo usuario, terminando por guardar toda esa data en la abse de datos.
+ */
 void opciones::on_Edit_usr_clicked()
 {
     registro_usr c (this);

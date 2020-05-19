@@ -190,33 +190,6 @@ base_da.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto3.dir/build.make CMakeFiles/Proyecto3.dir/base_da.cpp.s
 .PHONY : base_da.cpp.s
 
-conectardb.o: conectardb.cpp.o
-
-.PHONY : conectardb.o
-
-# target to build an object file
-conectardb.cpp.o:
-	$(MAKE) -f CMakeFiles/Proyecto3.dir/build.make CMakeFiles/Proyecto3.dir/conectardb.cpp.o
-.PHONY : conectardb.cpp.o
-
-conectardb.i: conectardb.cpp.i
-
-.PHONY : conectardb.i
-
-# target to preprocess a source file
-conectardb.cpp.i:
-	$(MAKE) -f CMakeFiles/Proyecto3.dir/build.make CMakeFiles/Proyecto3.dir/conectardb.cpp.i
-.PHONY : conectardb.cpp.i
-
-conectardb.s: conectardb.cpp.s
-
-.PHONY : conectardb.s
-
-# target to generate assembly for a file
-conectardb.cpp.s:
-	$(MAKE) -f CMakeFiles/Proyecto3.dir/build.make CMakeFiles/Proyecto3.dir/conectardb.cpp.s
-.PHONY : conectardb.cpp.s
-
 filtro.o: filtro.cpp.o
 
 .PHONY : filtro.o
@@ -422,9 +395,6 @@ help:
 	@echo "... base_da.o"
 	@echo "... base_da.i"
 	@echo "... base_da.s"
-	@echo "... conectardb.o"
-	@echo "... conectardb.i"
-	@echo "... conectardb.s"
 	@echo "... filtro.o"
 	@echo "... filtro.i"
 	@echo "... filtro.s"
