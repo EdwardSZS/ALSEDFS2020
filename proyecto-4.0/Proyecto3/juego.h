@@ -41,6 +41,8 @@ private slots:
 
     void on_pushok_clicked();
 
+    void vecarga();
+
     void on_b1_clicked();
 
     void on_b2_clicked();
@@ -58,9 +60,9 @@ private slots:
     void on_b8_clicked();
 
 private:
-    int s[30], n[30], st[30], nt[30], c=0, p=1;
+
     Ui::juego *ui;
-    int contador;
+    int contador, i=0, x, m, tv;
     char activo;
     QTimer *cronometro;
 };

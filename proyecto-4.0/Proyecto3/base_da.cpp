@@ -4,16 +4,16 @@
 #include "registro_usr.h"
 #include "registro_paci.h"
 
+using namespace std;
 base_da::base_da()
 {
+
 }
 
 bool base_da::abrirDB(string path)
-{
-    int rc;
+{int rc;
 
-    /*Open DataBase*/
-
+    ///* Open database
     rc = sqlite3_open( path.c_str() , &db);
 
     if( rc ) {
@@ -32,11 +32,12 @@ bool base_da::cargar_usrs(registro_usr &usr){
         *`DOCUMENTOID`	INTEGER NOT NULL UNIQUE,
         *`FECHANAC`	TEXT NOT NULL,
         *`USUARIO`	TEXT NOT NULL,
-        *`CONTRASENA`	TEXT NOT NULL)*/
+        *`CONTRASENA`	TEXT NOT NULL,
+        *`EDAD` INTEGER)*/
 
     char *zErrMsg = 0;
         int rc;
-
+        int ed;
         std::stringstream sql;
         /* Create SQL statement */
 
@@ -47,9 +48,9 @@ bool base_da::cargar_usrs(registro_usr &usr){
         sql << usr.getUsr() << "', '" << usr.getPass() <<  "');" ;
         std::cout << usr.getName() << std::endl;
         std::cout << sql.str() << std::endl;
-
+        ed = edad (usr.getN_id());
+        sql << "INSERT INTO Datos_usr (EDAD) VALUE("<<ed<<");";
         /* Execute SQL statement */
-
         rc = sqlite3_exec(db, sql.str().c_str(), 0, 0, &zErrMsg);
 
         if( rc != SQLITE_OK ){
@@ -64,8 +65,7 @@ bool base_da::cargar_usrs(registro_usr &usr){
 }
 
 bool base_da::cargar_pac(registro_paci &pac)
-{
-    /*TABLE `Dato_paciente` (
+{/*TABLE `Dato_paciente` (
     `Nombre`	TEXT NOT NULL,
     `Apellido`	TEXT NOT NULL,
     `Doc_id`	INTEGER NOT NULL UNIQUE PRIMARY KEY,
@@ -79,7 +79,6 @@ bool base_da::cargar_pac(registro_paci &pac)
         int rc;
 
         std::stringstream sql;
-
         /* Create SQL statement */
 
         sql <<"INSERT INTO Dato_paciente (Nombre, Apellido, Doc_id, FNAC, " \
@@ -89,6 +88,7 @@ bool base_da::cargar_pac(registro_paci &pac)
         sql << pac.getDir() << "', '" << pac.getEtnia() <<  "','"<<pac.getGen()<<"',' "<<pac.getIng()<< "');" ;
         std::cout << pac.getNom() << std::endl;
         std::cout << sql.str() << std::endl;
+
         /* Execute SQL statement */
         rc = sqlite3_exec(db, sql.str().c_str(), 0, 0, &zErrMsg);
 
@@ -106,12 +106,10 @@ bool base_da::cargar_pac(registro_paci &pac)
 bool base_da::autenticar_usr(string autent, string psw)
 {
        char *zErrMsg = 0;
-       int rc;
+       int rc,rc1;
        const char* data = "Callback function called";
 
-       abrirDB("fomrmulario_usr");
-
-       /*TABLE `Datos_user` (`NOMBRE`	TEXT NOT NULL,
+          /*TABLE `Datos_user` (`NOMBRE`	TEXT NOT NULL,
            *`APELLIDO`	TEXT NOT NULL,
            *`DOCUMENTOID`	INTEGER NOT NULL UNIQUE,
            *`FECHANAC`	TEXT NOT NULL,
@@ -120,14 +118,14 @@ bool base_da::autenticar_usr(string autent, string psw)
 
        /* Create SQL statement */
 
-        std::string sql;
+        std::string sql, sql1;
 
-       sql = "SELECT * FROM Datos_user WHERE (USUARIO='"+autent+"');";
-       sql = "SELECT * FROM Datos_user WHERE (CONTRASENA='"+psw+"');";
-
+       sql = "SELECT * FROM Datos_user WHERE USUARIO= '" +autent+ "';";
+       sql1 = "SELECT * FROM Datos_user WHERE (CONTRASENA='"+psw+"');";
+       cout<<sql<<"y"<<sql1<<endl;
        /* Execute SQL statement */
        rc = sqlite3_exec(db, sql.c_str(), funcionLlamada, (void*)data, &zErrMsg);
-
+      rc1 = sqlite3_exec(db, sql1.c_str(), funcionLlamada, (void*)data, &zErrMsg);
        if( rc != SQLITE_OK )
        {
             fprintf(stderr, "SQL error: %s\n", zErrMsg);
@@ -138,9 +136,26 @@ bool base_da::autenticar_usr(string autent, string psw)
        } else
        {
           fprintf(stdout, "Operation done successfully\n");
+          return true;
+          cerrarDB();
+
        }
-       cerrarDB();
-       return true;
+
+
+}
+
+int base_da::edad(int ced)
+{
+    int ed;
+    stringstream sql;
+    string edad;
+    //sql.clear();
+    sql << "(SELECT FECHANAC FROM Datos_user WHERE (DOCUMENTOID=" << ced << "))";
+    edad ="SELECT date ('now') - date ('"+ sql.str() +"');";
+    ed= atoi(edad.c_str());
+     return ed;
+
+
 }
 
 int base_da::funcionLlamada(void *data, int argc, char **argv, char **azColName)

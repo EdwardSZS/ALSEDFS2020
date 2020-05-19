@@ -180,16 +180,6 @@ QDialog
 string
 -
 
-/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/resultados.cpp
-resultados.h
-/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/resultados.h
-ui_resultados.h
-/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/ui_resultados.h
-iostream
--
-sstream
--
-
 /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/resultados.h
 QDialog
 -
@@ -242,14 +232,6 @@ QtCore/qbytearray.h
 QtCore/qmetatype.h
 -
 
-/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/Proyecto3_autogen/EWIEGA46WW/moc_resultados.cpp
-../../../Proyecto3/resultados.h
-/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/resultados.h
-QtCore/qbytearray.h
--
-QtCore/qmetatype.h
--
-
 /home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/Proyecto3_autogen/mocs_compilation.cpp
 EWIEGA46WW/moc_filtro.cpp
 /home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/Proyecto3_autogen/EWIEGA46WW/moc_filtro.cpp
@@ -263,8 +245,6 @@ EWIEGA46WW/moc_registro_paci.cpp
 /home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/Proyecto3_autogen/EWIEGA46WW/moc_registro_paci.cpp
 EWIEGA46WW/moc_registro_usr.cpp
 /home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/Proyecto3_autogen/EWIEGA46WW/moc_registro_usr.cpp
-EWIEGA46WW/moc_resultados.cpp
-/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/Proyecto3_autogen/EWIEGA46WW/moc_resultados.cpp
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
 qtimer.h
@@ -1476,6 +1456,14 @@ qlayoutitem.h
 qstatusbar.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstatusbar.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTableView
+qtableview.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtableview.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTableWidget
+qtablewidget.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtablewidget.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextBrowser
 qtextbrowser.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextbrowser.h
@@ -1814,6 +1802,22 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qwidget.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtableview.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qabstractitemview.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtablewidget.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qtableview.h
+-
+QtCore/qvariant.h
+-
+QtCore/qvector.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -1969,7 +1973,13 @@ QtWidgets/QPushButton
 -
 QtWidgets/QSpacerItem
 -
+QtWidgets/QTableView
+-
+QtWidgets/QTableWidget
+-
 QtWidgets/QTextBrowser
+-
+QtWidgets/QVBoxLayout
 -
 QtWidgets/QWidget
 -
@@ -2056,29 +2066,5 @@ QtWidgets/QLabel
 QtWidgets/QLineEdit
 -
 QtWidgets/QPushButton
--
-
-Proyecto3_autogen/include/ui_resultados.h
-QtCore/QVariant
--
-QtWidgets/QAction
--
-QtWidgets/QApplication
--
-QtWidgets/QButtonGroup
--
-QtWidgets/QDialog
--
-QtWidgets/QHBoxLayout
--
-QtWidgets/QHeaderView
--
-QtWidgets/QLabel
--
-QtWidgets/QLineEdit
--
-QtWidgets/QPushButton
--
-QtWidgets/QWidget
 -
 

@@ -406,33 +406,6 @@ registro_usr.cpp.s:
 	$(MAKE) -f CMakeFiles/Proyecto3.dir/build.make CMakeFiles/Proyecto3.dir/registro_usr.cpp.s
 .PHONY : registro_usr.cpp.s
 
-resultados.o: resultados.cpp.o
-
-.PHONY : resultados.o
-
-# target to build an object file
-resultados.cpp.o:
-	$(MAKE) -f CMakeFiles/Proyecto3.dir/build.make CMakeFiles/Proyecto3.dir/resultados.cpp.o
-.PHONY : resultados.cpp.o
-
-resultados.i: resultados.cpp.i
-
-.PHONY : resultados.i
-
-# target to preprocess a source file
-resultados.cpp.i:
-	$(MAKE) -f CMakeFiles/Proyecto3.dir/build.make CMakeFiles/Proyecto3.dir/resultados.cpp.i
-.PHONY : resultados.cpp.i
-
-resultados.s: resultados.cpp.s
-
-.PHONY : resultados.s
-
-# target to generate assembly for a file
-resultados.cpp.s:
-	$(MAKE) -f CMakeFiles/Proyecto3.dir/build.make CMakeFiles/Proyecto3.dir/resultados.cpp.s
-.PHONY : resultados.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -473,9 +446,6 @@ help:
 	@echo "... registro_usr.o"
 	@echo "... registro_usr.i"
 	@echo "... registro_usr.s"
-	@echo "... resultados.o"
-	@echo "... resultados.i"
-	@echo "... resultados.s"
 .PHONY : help
 
 

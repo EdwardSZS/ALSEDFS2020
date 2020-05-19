@@ -11,7 +11,6 @@ set(CMAKE_AUTOUIC ON)
 add_executable(${PROJECT_NAME} "main.cpp" "opciones.cpp" "inicio.cpp" "registro_usr.cpp" "conectardb.h"
                "registro_paci.cpp"  "base_da.cpp"  "opciones.h" "inicio.h" "registro_usr.h" "base_da.h" "conectardb.cpp"
                "registro_paci.h"  "base_da.h"   "opciones.ui" "inicio.ui" "registro_usr.ui" "registro_paci.ui"
-               "filtro.cpp" "filtro.h" "filtro.ui" "juego.cpp" "juego.h" "juego.ui"
-               "resultados.cpp" "resultados.h" "resultados.ui")
+               "filtro.cpp" "filtro.h" "filtro.ui" "juego.cpp" "juego.h" "juego.ui")
 
 target_link_libraries (${PROJECT_NAME} Qt5::Core Qt5::Widgets sqlite3 )

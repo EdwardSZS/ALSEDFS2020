@@ -183,15 +183,6 @@
 		<Unit filename="/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/registro_usr.ui">
 			<Option target="Proyecto3"/>
 		</Unit>
-		<Unit filename="/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/resultados.cpp">
-			<Option target="Proyecto3"/>
-		</Unit>
-		<Unit filename="/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/resultados.h">
-			<Option target="Proyecto3"/>
-		</Unit>
-		<Unit filename="/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/resultados.ui">
-			<Option target="Proyecto3"/>
-		</Unit>
 		<Unit filename="/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/Proyecto3_autogen/mocs_compilation.cpp">
 			<Option target="Proyecto3"/>
 		</Unit>

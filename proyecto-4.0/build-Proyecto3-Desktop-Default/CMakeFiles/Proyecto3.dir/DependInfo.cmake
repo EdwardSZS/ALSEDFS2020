@@ -14,7 +14,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/opciones.cpp" "/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3.dir/opciones.cpp.o"
   "/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/registro_paci.cpp" "/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3.dir/registro_paci.cpp.o"
   "/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/registro_usr.cpp" "/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3.dir/registro_usr.cpp.o"
-  "/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/resultados.cpp" "/home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/CMakeFiles/Proyecto3.dir/resultados.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

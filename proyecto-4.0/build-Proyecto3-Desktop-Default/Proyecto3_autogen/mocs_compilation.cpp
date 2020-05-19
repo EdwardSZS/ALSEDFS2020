@@ -5,4 +5,3 @@
 #include "EWIEGA46WW/moc_opciones.cpp"
 #include "EWIEGA46WW/moc_registro_paci.cpp"
 #include "EWIEGA46WW/moc_registro_usr.cpp"
-#include "EWIEGA46WW/moc_resultados.cpp"

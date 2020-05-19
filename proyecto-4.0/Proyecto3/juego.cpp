@@ -23,9 +23,11 @@ using namespace std;
 juego::juego(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::juego)
-{    
+{
     contador=0; /*!< Debemos inicializar el contador en cero para hacer de cuenta que al inicion del contador este se encuentra en cero.*/
     ui->setupUi(this);
+    tv=0;
+    x=0;
     ui->cronos->display( contador ); /*!< esta funcion toma el valor actual de la variable \param contador y la muestra en el display.*/
 
     cronometro = new QTimer(this); /*!< Inicializacion del \param conometro quien es el que se encragara
@@ -76,19 +78,13 @@ void juego::ontime()
 
     mecanismoA(); /*!< Cuando el valor aleatorio halla sido seleciconado y los botones deshabilitados e invisibles, entramos
                        a seleccionar cual unico boton se encenderá*/
-
-    c++;
-    p++;
-
-    cout<<c<<endl;
-
     if( contador == 0 )
     {
-        resultados a (this);
-        a.setModal(true);
-        close();
-        a.show();
-        a.exec();
+        //resultados a (this);
+        //a.setModal(true);
+        //close();
+        //a.show();
+        //a.exec();
     }
     else
         cronometro->start(); /*!< Damos luz verde para que la variable \param cronometro pase al siguiente valor en decenso*/
@@ -97,19 +93,22 @@ void juego::ontime()
 void juego::on_push30s_clicked()    /////////////////////////////////////////////
 {                                   ///
     contador = 30;                  ///
-    cronometro->start();            ///
+    cronometro->start();
+    tv = 30;                ///
 }                                   ///
                                     ///
 void juego::on_push1min_clicked()   /// \brief juego::on_push30s_clicked
 {                                   /// \brief juego::on_push1min_clicked
     contador = 60;                  /// \brief juego::on_push5min_clicked
-    cronometro->start();            ///
+    cronometro->start();
+    tv = 60;  ///
 }                                   /// Aquellas funciones permiten darle valor inicial
                                     /// al la variable \param contador y asi empezar a contar
 void juego::on_push5min_clicked()   /// en la funcion ontime.
 {                                   ///
     contador = 300;                 ///
-    cronometro->start();            ///
+    cronometro->start();
+    tv = 300;                 ///
 }                                   ///
                                     ///////////////////////////////////////////////
 
@@ -126,6 +125,7 @@ void juego::on_pushok_clicked()
 
     contador = tiempo;
     cronometro->start();
+    tv = tiempo;
 
     if(tiempo == 0)
     {
@@ -134,11 +134,13 @@ void juego::on_pushok_clicked()
         contador=0;
     }
 }
+
 /*!
  * \brief juego::mecanismoA
  * Cuando se desabilitaron los botones en ontime, la funcion de mecanismoA tiene el trabajo de mostrar solo un boton, al azar,
  * durando un segundo en accion hasta cambiar a otro.
  */
+
 void juego::mecanismoA()
 {
     switch ( activo ) {
@@ -146,18 +148,6 @@ void juego::mecanismoA()
         activo = 1;
         ui->b1->setEnabled( true );
         ui->b1->setVisible( true );
-        if(ui->b1->isChecked() == true)
-        {
-            s[c] = p;
-            st[c] = contador;
-            cout<<"si"<<endl;
-        }
-        else
-        {
-            n[c] = p;
-            nt[c] = contador;
-            cout<<"no"<<endl;
-        }
         break;
     case 2:
         activo = 2;
@@ -204,75 +194,70 @@ void juego::mecanismoA()
  * Cada botón que se encienda en un detemrinado momento debe ser enparejado con una accion, esa accion la tomamos como el click
  * que se le debe hacer al mismo, ese es el propocito por el cual se genreraron funciones de accion Clicked por cada uno.
  */
+
 void juego::on_b1_clicked()
 {
-    if(activo==1)
-    {
-        ui->b1->setDisabled(true);
-        ontime();
-    }
-
+    i=1;
+    vecarga();
 }
 
 void juego::on_b2_clicked()
 {
-    if(activo==2)
-    {
-        ui->b2->setDisabled(true);
-        ontime();
-    }
+    i=2;
+    vecarga();
 }
 
 void juego::on_b3_clicked()
 {
-    if(activo==3)
-    {
-        ui->b3->setDisabled(true);
-        ontime();
-    }
+    i=3;
+    vecarga();
 }
 
 void juego::on_b4_clicked()
 {
-    if(activo==4)
-    {
-        ui->b4->setDisabled(true);
-        ontime();
-    }
+    i=4;
+    vecarga();
 }
 
 void juego::on_b5_clicked()
 {
-    if(activo==5)
-    {
-        ui->b5->setDisabled(true);
-        ontime();
-    }
+    i=5;
+    vecarga();
 }
 
 void juego::on_b6_clicked()
 {
-    if(activo==6)
-    {
-        ui->b6->setDisabled(true);
-        ontime();
-    }
+    i=6;
+    vecarga();
 }
 
 void juego::on_b7_clicked()
 {
-    if(activo==7)
-    {
-        ui->b7->setDisabled(true);
-        ontime();
-    }
+    i=7;
+    vecarga();
 }
 
 void juego::on_b8_clicked()
 {
-    if(activo==8)
-    {
-        ui->b8->setDisabled(true);
-        ontime();
+    i=8;
+    vecarga();
+}
+
+void juego::vecarga()
+{
+    int vec_aci[tv];
+    int vec_tie[tv];
+
+    vec_aci[x]=i;
+
+    if(i)
+    {   vec_aci[x]=0;
+        vec_tie[x]=contador;
     }
+    else
+    {
+    vec_tie[x]=contador;
+    }
+    cout<<vec_aci[x]<<endl;
+    cout<<vec_tie[x]<<endl;
 }

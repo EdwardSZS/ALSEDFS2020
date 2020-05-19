@@ -22,7 +22,10 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -51,12 +54,17 @@ public:
     QPushButton *push1min;
     QPushButton *push30s;
     QSpacerItem *horizontalSpacer;
+    QTableWidget *tableWidget;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout;
+    QTableView *tableView;
+    QPushButton *Listo;
 
     void setupUi(QDialog *juego)
     {
         if (juego->objectName().isEmpty())
             juego->setObjectName(QStringLiteral("juego"));
-        juego->resize(1010, 482);
+        juego->resize(1320, 639);
         juego->setStyleSheet(QStringLiteral("background-color: rgb(46, 52, 54);"));
         groupBox = new QGroupBox(juego);
         groupBox->setObjectName(QStringLiteral("groupBox"));
@@ -166,6 +174,38 @@ public:
 
         gridLayout->addItem(horizontalSpacer, 0, 1, 1, 1);
 
+        tableWidget = new QTableWidget(juego);
+        if (tableWidget->columnCount() < 1)
+            tableWidget->setColumnCount(1);
+        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
+        if (tableWidget->rowCount() < 1)
+            tableWidget->setRowCount(1);
+        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(0, __qtablewidgetitem1);
+        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
+        tableWidget->setItem(0, 0, __qtablewidgetitem2);
+        tableWidget->setObjectName(QStringLiteral("tableWidget"));
+        tableWidget->setGeometry(QRect(760, 500, 256, 192));
+        widget = new QWidget(juego);
+        widget->setObjectName(QStringLiteral("widget"));
+        widget->setGeometry(QRect(1010, 10, 291, 611));
+        verticalLayout = new QVBoxLayout(widget);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        tableView = new QTableView(widget);
+        tableView->setObjectName(QStringLiteral("tableView"));
+        tableView->setEnabled(false);
+        tableView->setStyleSheet(QStringLiteral("background-color: rgb(186, 189, 182);"));
+
+        verticalLayout->addWidget(tableView);
+
+        Listo = new QPushButton(widget);
+        Listo->setObjectName(QStringLiteral("Listo"));
+        Listo->setStyleSheet(QStringLiteral("background-color: rgb(114, 159, 207);"));
+
+        verticalLayout->addWidget(Listo);
+
 
         retranslateUi(juego);
 
@@ -203,6 +243,18 @@ public:
         push5min->setText(QApplication::translate("juego", "5min", Q_NULLPTR));
         push1min->setText(QApplication::translate("juego", "1min", Q_NULLPTR));
         push30s->setText(QApplication::translate("juego", "30s", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
+        ___qtablewidgetitem->setText(QApplication::translate("juego", "New Column", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem1 = tableWidget->verticalHeaderItem(0);
+        ___qtablewidgetitem1->setText(QApplication::translate("juego", "New Row", Q_NULLPTR));
+
+        const bool __sortingEnabled = tableWidget->isSortingEnabled();
+        tableWidget->setSortingEnabled(false);
+        QTableWidgetItem *___qtablewidgetitem2 = tableWidget->item(0, 0);
+        ___qtablewidgetitem2->setText(QApplication::translate("juego", "uu", Q_NULLPTR));
+        tableWidget->setSortingEnabled(__sortingEnabled);
+
+        Listo->setText(QApplication::translate("juego", "Listo", Q_NULLPTR));
     } // retranslateUi
 
 };

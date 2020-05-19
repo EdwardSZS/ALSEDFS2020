@@ -1,5 +1,7 @@
 #include "resultados.h"
 #include "ui_resultados.h"
+#include "juego.h"
+
 
 #include <iostream>
 #include <sstream>
@@ -11,6 +13,7 @@ resultados::resultados(QWidget *parent) :
     ui(new Ui::resultados)
 {
     ui->setupUi(this);
+    //juego();
 }
 
 resultados::~resultados()

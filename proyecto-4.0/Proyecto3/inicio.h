@@ -17,6 +17,7 @@ class inicio;
  * que abre otras auxiliares.
  * \details
  */
+
 class inicio : public QDialog
 {
     Q_OBJECT

@@ -10,7 +10,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Proyecto3.dir/conectardb.cpp.o"
   "CMakeFiles/Proyecto3.dir/filtro.cpp.o"
   "CMakeFiles/Proyecto3.dir/juego.cpp.o"
-  "CMakeFiles/Proyecto3.dir/resultados.cpp.o"
   "CMakeFiles/Proyecto3.dir/Proyecto3_autogen/mocs_compilation.cpp.o"
   "Proyecto3.pdb"
   "Proyecto3"
