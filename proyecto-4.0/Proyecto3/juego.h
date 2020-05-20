@@ -3,7 +3,6 @@
 
 #include <QDialog>
 #include <QTimer>
-#include <vector>
 
 using namespace std;
 

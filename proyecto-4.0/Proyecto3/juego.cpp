@@ -5,7 +5,6 @@
 #include <sstream>
 #include <stdlib.h>
 
-#include "resultados.h"
 #include <QTimer>
 #include "QMessageBox"
 
@@ -28,7 +27,7 @@ juego::juego(QWidget *parent) :
     contador=0; /*!< Debemos inicializar el contador en cero para hacer de cuenta que al inicion del contador este
                     se encuentra en cero.*/
     ui->setupUi(this);
-    tv=0;
+    tv=0; /*!< inicializando la variable del tamaño del vector en 0*/
     x=0;
     ui->cronos->display( contador ); /*!< esta funcion toma el valor actual de la variable \param contador y la muestra
                                           en el display.*/
@@ -264,7 +263,6 @@ void juego::vecarga()
 {
     int vec_aci[tv];
     int vec_tie[tv];
-    string segundos, botones;
 
     vec_aci[x]=i;
 

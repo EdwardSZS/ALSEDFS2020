@@ -87,8 +87,6 @@ sstream
 -
 stdlib.h
 -
-resultados.h
-/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/resultados.h
 QTimer
 -
 QMessageBox
@@ -98,8 +96,6 @@ QMessageBox
 QDialog
 -
 QTimer
--
-vector
 -
 
 /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/main.cpp
@@ -174,10 +170,6 @@ QMessageBox
 QDialog
 -
 string
--
-
-/home/alseuser/Escritorio/proyecto-4.0/Proyecto3/resultados.h
-QDialog
 -
 
 /home/alseuser/Escritorio/proyecto-4.0/build-Proyecto3-Desktop-Default/Proyecto3_autogen/EWIEGA46WW/moc_filtro.cpp

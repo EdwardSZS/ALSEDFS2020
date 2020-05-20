@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Aplicacion_alse_final: Fichero Fuente /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/base_da.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Aplicacion_alse_final
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Proyecto_final</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f27c2b715e06eef4b93c6b2df65fc026.html">Proyecto3</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">base_da.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BASE_DA_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BASE_DA_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;sqlite3.h&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;registro_usr.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;registro_paci.h&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classbase__da.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbase__da.html">base_da</a></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classbase__da.html">base_da</a>();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;     <span class="keywordtype">bool</span> abrirDB( <span class="keywordtype">string</span> path );</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;     <span class="keywordtype">bool</span> cerrarDB();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;     <span class="keywordtype">bool</span> cargar_usrs(<a class="code" href="classregistro__usr.html">registro_usr</a> &amp;usr );</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;     <span class="keywordtype">bool</span> cargar_pac(<a class="code" href="classregistro__paci.html">registro_paci</a> &amp;pac);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;     <span class="keywordtype">bool</span> autenticar_usr (<span class="keywordtype">string</span> autent, <span class="keywordtype">string</span> psw);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;     <span class="keywordtype">int</span> edad(<span class="keywordtype">int</span> ced);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;     <span class="comment">//bool cargar_paci();</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    sqlite3 *db;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> funcionLlamada(<span class="keywordtype">void</span> *data, <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv, <span class="keywordtype">char</span> **azColName);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// static int funcioncall(void *f, int argc, char **argv, char **azColName);</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // BASE_DA_H</span></div><div class="ttc" id="classregistro__usr_html"><div class="ttname"><a href="classregistro__usr.html">registro_usr</a></div><div class="ttdoc">The registro_usr class De manera muy similar a la clase de el registro para el paciente, esta clase permite a las variables retomadas de la interfaz grafica, viajar hacia la BD, para poder ser almacenadas y en casos algunos procesadas, como ocurre con la edad. Todo esto a travez de un proceso de ventana (Gui) para hacer el procesos no tan tosco para una persona que no tenega conociminetos en programacion. </div><div class="ttdef"><b>Definition:</b> registro_usr.h:20</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classregistro__paci_html"><div class="ttname"><a href="classregistro__paci.html">registro_paci</a></div><div class="ttdoc">The registro_paci class En esta clase se hace una analogia al puente que conecta al usuario con la ba...</div><div class="ttdef"><b>Definition:</b> registro_paci.h:20</div></div>
+<div class="ttc" id="classbase__da_html"><div class="ttname"><a href="classbase__da.html">base_da</a></div><div class="ttdoc">The base_da class La clase de base de datos es aquella encargada de operar, compilar y relacionar los...</div><div class="ttdef"><b>Definition:</b> base_da.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

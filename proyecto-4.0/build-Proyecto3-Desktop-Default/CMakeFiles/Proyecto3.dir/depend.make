@@ -558,7 +558,6 @@ CMakeFiles/Proyecto3.dir/inicio.cpp.o: Proyecto3_autogen/include/ui_inicio.h
 
 CMakeFiles/Proyecto3.dir/juego.cpp.o: /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/juego.cpp
 CMakeFiles/Proyecto3.dir/juego.cpp.o: /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/juego.h
-CMakeFiles/Proyecto3.dir/juego.cpp.o: /home/alseuser/Escritorio/proyecto-4.0/Proyecto3/resultados.h
 CMakeFiles/Proyecto3.dir/juego.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
 CMakeFiles/Proyecto3.dir/juego.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 CMakeFiles/Proyecto3.dir/juego.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h

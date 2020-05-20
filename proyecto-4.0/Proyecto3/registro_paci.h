@@ -56,6 +56,7 @@ private slots:
     void on_Registra_paci_clicked();
 
 private:
+
     Ui::registro_paci *ui;
     string nom;
     string ape;
